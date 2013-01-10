@@ -1,0 +1,5 @@
+start on net-device-up
+
+respawn
+
+exec dnsmasq -k -u dnsmasq <%= @cmd.join(' ') %>
